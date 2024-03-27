@@ -6,6 +6,6 @@ terraform {
   backend "s3" {
     bucket = "cicd-class"
     key    = "terraform.tfstate"
-    region = "eu-west-2"
+    region = "us-east-1"
   }
 }
