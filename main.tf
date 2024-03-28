@@ -98,7 +98,7 @@ module "eks" {
 
       # Remote access cannot be specified with a launch template
       remote_access = {
-        ec2_ssh_key               = module.key_pair.key_pair_name
+        ec2_ssh_key               = module.key_pair.dockerize.pem
         source_security_group_ids = [aws_security_group.remote_access.id]
       }
     }
